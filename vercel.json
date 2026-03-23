@@ -1,7 +1,6 @@
 {
   "buildCommand": "next build",
   "outputDirectory": ".next",
-  "env": {
-    "RESEND_API_KEY": "@resend_api_key"
-  }
+  "installCommand": "npm install",
+  "devCommand": "next dev"
 }
