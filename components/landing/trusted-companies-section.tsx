@@ -7,20 +7,20 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const templates = [
   {
     id: 1,
-    name: "Modern SaaS",
-    description: "Clean and minimalist SaaS template",
+    name: "E-commerce Pro",
+    description: "Clean and minimalist E-commerce template",
     videoUrl: "/video2.mov",
   },
   {
     id: 2,
-    name: "E-commerce Pro",
-    description: "Professional e-commerce solution",
+    name: "Elegant Showcase Template for Brands",
+    description: "Professional web solution",
     videoUrl: "/video3.mov",
   },
   {
     id: 3,
-    name: "Agency Portfolio",
-    description: "Creative agency showcase",
+    name: "Modern Gen Z Energy Drink Landing Page",
+    description: "Creative Landing Page",
     videoUrl: "/video4.mov",
   },
 ];
@@ -121,19 +121,21 @@ export function TrustedCompaniesSection() {
         <div className="relative">
           {/* Main Video Display */}
           <div
-            className="relative rounded-2xl overflow-hidden bg-black/50 aspect-video mb-8 lg:mb-12 touch-pan-y"
+            className="relative rounded-2xl overflow-hidden bg-black/50 max-w-2xl mx-auto aspect-video mb-8 lg:mb-12 touch-pan-y flex items-center justify-center p-4"
             onTouchStart={(e) => (handleTouchStart.current = e.touches[0].clientX)}
             onTouchEnd={handleTouchEnd}
           >
-            <video
-              ref={videoRef}
-              key={templates[currentIndex].videoUrl}
-              src={templates[currentIndex].videoUrl}
-              className="w-full h-full object-cover"
-              muted
-              loop
-              playsInline
-            />
+            <div className="w-full h-full rounded-lg overflow-hidden">
+              <video
+                ref={videoRef}
+                key={templates[currentIndex].videoUrl}
+                src={templates[currentIndex].videoUrl}
+                className="w-full h-full object-contain"
+                muted
+                loop
+                playsInline
+              />
+            </div>
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
 
