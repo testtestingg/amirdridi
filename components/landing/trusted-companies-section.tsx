@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Templates data with video sources
-const templates = [
+const templates = [ 
   {
     id: 1,
     name: "E-commerce Pro",
