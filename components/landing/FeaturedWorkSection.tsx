@@ -50,10 +50,10 @@ export function FeaturedWorkSection() {
         </div>
 
         {/* Video Showcase Area */}
-        <div className="relative mt-8 lg:mt-12 flex justify-center">
+        <div className="relative mt-8 lg:mt-12">
           
           {/* Browser Window Mockup Wrapper */}
-          <div className="w-full max-w-xl rounded-xl overflow-hidden border border-foreground/20 bg-background shadow-2xl ring-1 ring-foreground/5">
+          <div className="w-full rounded-xl overflow-hidden border border-foreground/20 bg-background shadow-2xl ring-1 ring-foreground/5">
             
             {/* Fake Browser Top Bar */}
             <div className="h-10 border-b border-foreground/10 bg-foreground/[0.03] flex items-center px-4 gap-2 relative">
